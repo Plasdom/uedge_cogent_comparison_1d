@@ -1,0 +1,9 @@
+# Install UEDGE
+pip install uedge
+
+# Run UEDGE
+python -i run_uedge.py
+
+# Plot 1D variables
+from plots import *
+plot1d(bbb.ne, ylabel=r"$n_e$ [m$^{-3}$]")
