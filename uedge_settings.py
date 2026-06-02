@@ -142,7 +142,7 @@ if (bbb.isupgon[0] == 1):
 
 
 #-Currents and potential parameters
-bbb.isphion=0
+bbb.isphion=1
 bbb.rsigpl=1.e-8            #anomalous cross-field conductivity
 bbb.cfjhf=0.                #turn-on heat flow from current (fqp)
 bbb.jhswitch=0              #Joule Heating switch
