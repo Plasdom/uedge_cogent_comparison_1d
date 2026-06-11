@@ -47,7 +47,7 @@ bbb.isfixlb=2
 
 #-core boundary
 bbb.isnicore[0]=0
-bbb.curcore=12.8
+bbb.curcore=8.0
 # bbb.ncore[0]=0.5e19   
 bbb.iflcore=1
 bbb.isupcore=0      #if 1 then slip, if 0 vel =0 on core bndry
@@ -80,7 +80,7 @@ bbb.kyi = 0.1               # anomalous elec. & ion energy diff. coeff.
 bbb.travis[0]=0.1           # anomalous viscosity coeff.
 bbb.isgasdc = 1
 # bbb.difcng = 1.38e5
-bbb.difcng = 0.01*138411.1
+bbb.difcng = 0.1*138411.1/9.514364454222624
 
 #-Flux limiters
 bbb.flalfe=1e20
