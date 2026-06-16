@@ -19,6 +19,8 @@ grd.alfxt= 1.0    #poliodal nonuniformity factor
 
 grd.btfix = 3*0.994521895368273   #  Tesla
 grd.bpolfix = 3*0.104528463267653 #  Tesla
+# grd.btfix = 3.0   #  Tesla
+# grd.bpolfix = 0.1 #  Tesla
 
 bbb.ngrid=1
 com.nxleg[0,0]=0
@@ -47,12 +49,12 @@ bbb.isfixlb=2
 
 #-core boundary
 bbb.isnicore[0]=0
-bbb.curcore=8.0
+bbb.curcore=0.0#13.8 #8.0
 # bbb.ncore[0]=0.5e19   
 bbb.iflcore=1
 bbb.isupcore=0      #if 1 then slip, if 0 vel =0 on core bndry
-bbb.pcoree = 0.125e6
-bbb.pcorei = 0.125e6
+bbb.pcoree = 0.125e6 #0.125e6
+bbb.pcorei = 0.125e6 #0.125e6
 
 #-outer wall boundary
 bbb.istewc=0        #wall has zero temp. deriv.  
@@ -66,7 +68,7 @@ bbb.istipfc=0
 bbb.isnwconi=0
 bbb.isupwi=0   #slip        
 
-bbb.recycp = 0.99            # plate recycling coeff.
+bbb.recycp = 1.00            # plate recycling coeff.
 bbb.recycm = 0.0 
 bbb.bcee = 5.               #energy transmission coeffs. for electrons
 bbb.bcei = 3.5              #energy transmission coeffs. for ions
@@ -163,6 +165,10 @@ bbb.flalfgy=1e20
 bbb.istgcon=1
 bbb.tgas=5.0
 
+
+bbb.cnucx = 0.0 # Turn off CX???
+bbb.cfneutsor_ei=0.0 # coeff. for fluid neutral energy source in resei
+bbb.cfticx = 0.0 # Turn off CX in Ti eqn???
 
 # Particular values for test
 # bbb.minu[0] = 1.    # ion mass relative to mp (hydrogen)
