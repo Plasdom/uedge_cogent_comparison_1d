@@ -22,7 +22,7 @@ from uedge.rundt import *
 from uedge.uedge_lists import *
 from power_balance_1d import *
 
-hdf5_restore("ue1d_lopower.h5")
+hdf5_restore("ue1d.h5")
 
 #-short run to initialize everything
 # bbb.ftol=1e8; 

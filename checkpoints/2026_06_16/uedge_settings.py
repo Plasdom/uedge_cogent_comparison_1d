@@ -11,10 +11,10 @@ bbb.isfixlb=2     #left boundary as sym. plane; no flux at cut
 grd.radx = 0.01   #-outer "radial" wall
 grd.radm = -1e-6  #-minimum "radial" position
 grd.rad0 = 0.0
-grd.alfyt=1.0    #-radial nonuniformity factor; < 0 => expanding
+grd.alfyt=-2.0    #-radial nonuniformity factor; < 0 => expanding
 grd.za0 = 0.      #-poloidal symmetry plane location
-grd.zaxpt=0.75 #1.5     #-poloidal location of x-point
-grd.zax=1.0    #2.0       #-poloidal location of divertor plate   
+grd.zaxpt=1.5     #-poloidal location of x-point
+grd.zax=2.0       #-poloidal location of divertor plate   
 grd.alfxt= 1.0    #poliodal nonuniformity factor
 
 grd.btfix = 3*0.994521895368273   #  Tesla
@@ -53,8 +53,8 @@ bbb.curcore=0.0#13.8 #8.0
 # bbb.ncore[0]=0.5e19   
 bbb.iflcore=1
 bbb.isupcore=0      #if 1 then slip, if 0 vel =0 on core bndry
-bbb.pcoree = 0.05e6 #0.0125e6
-bbb.pcorei = 0.05e6 #0.0125e6
+bbb.pcoree = 0.125e6 #0.125e6
+bbb.pcorei = 0.125e6 #0.125e6
 
 #-outer wall boundary
 bbb.istewc=0        #wall has zero temp. deriv.  
@@ -79,15 +79,14 @@ bbb.isupss = 1              #parallel vel sonic
 bbb.difni[0] = 0.1          # anomalous hydrogenic particle diff. coeff.
 bbb.kye = 0.1               # anomalous elec. & ion energy diff. coeff.
 bbb.kyi = 0.1               # anomalous elec. & ion energy diff. coeff.
-bbb.travis[0]=0.0           # anomalous viscosity coeff.
-# bbb.parvis[0]=1.0/9.514364454222624
+bbb.travis[0]=0.1           # anomalous viscosity coeff.
 bbb.isgasdc = 1
 # bbb.difcng = 1.38e5
-bbb.difcng = 0.1*138411.1/9.514364454222624 #0.1*6920.558/9.514364454222624 #
+bbb.difcng = 0.1*138411.1/9.514364454222624
 
 #-Flux limiters
-bbb.flalfe=1e20 #0.3
-bbb.flalfi=1e20 #2.0
+bbb.flalfe=1e20
+bbb.flalfi=1e20
 bbb.flalfgx=1e20
 bbb.flalfgy=1e20
 bbb.flalfgxy=1e20

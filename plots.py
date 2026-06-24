@@ -33,7 +33,7 @@ def get_x_coord(xaxis: str = "pol", iy: int = 1):
     
     return x
 
-def plot1d(var, xaxis: str = "pol", ylabel: str = ""):
+def plot1d(var, iy: int = 1, xaxis: str = "pol", ylabel: str = ""):
     """Plot 1D variable
 
     :param var: UEDGE variable
@@ -42,8 +42,8 @@ def plot1d(var, xaxis: str = "pol", ylabel: str = ""):
     :return: axes
     """
     fig,ax = plt.subplots(1)
-    x = get_x_coord(xaxis, iy=1)
-    ax.plot(x[1:-1],var[1:-1,1])
+    x = get_x_coord(xaxis, iy=iy)
+    ax.plot(x[1:-1],var[1:-1,iy])
     ax.grid()
 
     if xaxis == "pol":
