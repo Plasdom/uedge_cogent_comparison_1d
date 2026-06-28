@@ -1,5 +1,14 @@
 # UEDGE vs. COGENT comparison
-This repo contains a 1D UEDGE model for comparison with COGENT. Run the case with run_uedge.py. All settings for the model are in uedge_settings.py.
+
+This repo compares a 1D COGENT and UEDGE run. Generate a plot comparing the runs with 
+
+python -i plot_comparison.py
+
+You will need COGENT's python analysis package installed. See https://github.com/plasdom/pycogent
+
+# UEDGE run details
+
+Run the case with run_uedge.py. All settings for the model are in uedge_settings.py.
 
 This 1D model assumes no flux expansion and a reflective upstream boundary. A deuterium-only plasma is used, along with a diffusive neutral model. 0.25 MW of heating power is applied in the core region, and 99% of ions incident on the target are recycled as neutrals. 
 
