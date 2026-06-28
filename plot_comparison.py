@@ -8,7 +8,7 @@ import plots
 
 # Specify locations of both runs
 UEDGE_RUN = "ue1d.h5"
-COGENT_RUN = "../cogent_runs/no_particle_source_lopower_hidens"
+COGENT_RUN = "cogent_run"
 
 # Load UEDGE run
 hdf5_restore(UEDGE_RUN)
