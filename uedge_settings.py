@@ -13,8 +13,8 @@ grd.radm = -1e-6  #-minimum "radial" position
 grd.rad0 = 0.0
 grd.alfyt=1.0    #-radial nonuniformity factor; < 0 => expanding
 grd.za0 = 0.      #-poloidal symmetry plane location
-grd.zaxpt=0.75 #1.5     #-poloidal location of x-point
-grd.zax=1.0    #2.0       #-poloidal location of divertor plate   
+grd.zaxpt=1.5 #1.5     #-poloidal location of x-point
+grd.zax=2.0    #2.0       #-poloidal location of divertor plate   
 grd.alfxt= 1.0    #poliodal nonuniformity factor
 
 grd.btfix = 3*0.994521895368273   #  Tesla
@@ -53,8 +53,8 @@ bbb.curcore=0.0#13.8 #8.0
 # bbb.ncore[0]=0.5e19   
 bbb.iflcore=1
 bbb.isupcore=0      #if 1 then slip, if 0 vel =0 on core bndry
-bbb.pcoree = 0.05e6 #0.0125e6
-bbb.pcorei = 0.05e6 #0.0125e6
+bbb.pcoree = 0.05e6 
+bbb.pcorei = 0.05e6
 
 #-outer wall boundary
 bbb.istewc=0        #wall has zero temp. deriv.  
